@@ -10,7 +10,6 @@
     <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
   </head>
   <body>
-    <!-- <embed src="bgsound.mp3" autostart="true" loop="true" hidden="true">   -->
     <a-scene>
       <!-- <a-assets>
         <a-mixin
@@ -24,7 +23,9 @@
       <a-entity id="ocean" ocean="density: 20; width: 50; depth: 50; speed: 4"
                 material="color: #9CE3F9; opacity: 0.75; metalness: 0; roughness: 1"
                 rotation="-90 0 0"></a-entity>
+      <!-- Take this line (27) out if you want to change the color of the ocean to light blue -->
       <a-entity id="light" light="type: ambient; color: #888"></a-entity>
+      
       <a-entity mixin="marker" position="-2.5 0.7 0.01"></a-entity>
 
       <!-- Animations. -->
@@ -47,15 +48,21 @@
       </a-entity>
       <a-entity mixin="marker" position="0 1 0.01"></a-entity>
       <a-entity position="0 1 0"
-                text="anchor: center; width: 1.5; color: white; value: Internship at Fade,
+                text="anchor: center; width: 1.5; color: white; value: Internship at Cisco Systems,
                 June 5, 2017 to August 25, 2017">
       </a-entity>
       <a-entity mixin="marker" position="2.5 1 0.01"></a-entity>
       <a-entity position="2.5 1 0"
-                text="anchor: right; width: 1.5; color: white; value: Worked on creating a UDP and TCP support in the agent and creating a GUI for a Wireless Simulator used for testing purposes">
+                text="anchor: right; width: 1.5; color: white; value: Worked on extending Layer 2 and Layer 3 Traffic
+                to a Layer 4 to Layer 7 Traffic Generator and creating a GUI for a Wireless Simulator used for
+                testing purposes">
       </a-entity>
 
       <!-- Spacing. -->
+      <a-entity mixin="marker" position="1 3 0.01"></a-entity>
+      <a-entity position="2.4 3.4 0"
+                text="width: 5; color: white; value: Mohit Jain">
+      </a-entity>
       <a-entity mixin="marker" position="-1 2.5 0.01"></a-entity>
       <a-entity position="-1 3 0"
                 text="width: 2; color: white; value: Welcome to my website! My name is Mohit Jain, and I am a 3rd year, Computer Science major and Mathematics minor, student studying at the University of Pittsburgh.">
